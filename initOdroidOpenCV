@@ -21,3 +21,4 @@ make
 sudo make install
 
 sudo apt-get install gedit
+sudo apt-get install git
