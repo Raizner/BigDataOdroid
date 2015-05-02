@@ -15,5 +15,5 @@ git clone https://github.com/ariandyy/bgsubtract.git
 cd bgsubtract/
 make bgsubtract2
 mkdir /home/odroid/mjpg
-
+sudo echo 'alias startServer=~/BigDataOdroid/runServerScript' >> ~./bashrc
 
