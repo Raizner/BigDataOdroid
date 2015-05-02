@@ -1,5 +1,5 @@
 #!/bin/bash
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
-nohup ./bgsubtract/bgsubtract2 /home/odroid/mjpg/out.mjpg >&1 2>&1 &
+nohup ~/BigDataOdroid/bgsubtract/bgsubtract2 /home/odroid/mjpg/out.mjpg >&1 2>&1 &
 nohup mjpg_streamer -i "input_file.so -f /home/odroid/mjpg" -o "output_http.so -w /usr/local/www" >&1 2>&1 &
