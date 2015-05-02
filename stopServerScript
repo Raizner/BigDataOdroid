@@ -1,0 +1,7 @@
+#!/bin/sh
+ps -ef | grep "bgsubstract2" | awk '{print $2}' | xargs kill
+echo "Killed bgsubstract"
+ps -ef | grep "mjpg-streamer" | awk '{print $2}' | xargs kill
+echo "Killed mjpg-streamer"
+
+
