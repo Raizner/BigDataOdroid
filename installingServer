@@ -1,7 +1,7 @@
 #!/bin/bash  
 # first argument is the password
-mkdir ~/BigDataServer
-cd ~/BigDataServer
+mkdir ~/BigDataOdroid
+cd ~/BigDataOdroid
 sudo apt-get install subversion imagemagick
 echo "Installed imagemagick"
 svn co https://svn.code.sf.net/p/mjpg-streamer/code/mjpg-streamer mjpg-streamer
@@ -10,7 +10,7 @@ make USE_LIBV4L2=true clean all
 sudo make DESTDIR=/usr/local install
 sudo echo `export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib` >> ~/.bashrc
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
-cd ~/BigDataServer
+cd ~/BigDataOdroid
 git clone https://github.com/ariandyy/bgsubtract.git
 cd bgsubtract/
 make bgsubtract2
